@@ -4,8 +4,9 @@ Dockerfile
 docker-compose.yml
 
 # Environments and configurations (will be mounted as volumes)
-web_app/.env
-web_app/LLM_CONFIG.json
+# Commented out to allow production Dockerfile to include these files
+# web_app/.env
+# web_app/LLM_CONFIG.json
 
 # Persistent storage (will be mounted as volumes)
 web_app/storage/
