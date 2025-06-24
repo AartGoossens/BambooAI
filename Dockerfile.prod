@@ -15,6 +15,7 @@ RUN pip install --no-cache-dir -r requirements.txt setuptools gunicorn
 
 # Copy application code
 COPY . .
+COPY LLM_CONFIG_prod.json ./web_app/LLM_CONFIG.json
 
 # Create necessary directories
 RUN mkdir -p web_app/storage/favourites web_app/storage/threads web_app/temp web_app/logs web_app/datasets
